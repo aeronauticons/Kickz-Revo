@@ -1,0 +1,382 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color: #efefef;
+	font-family: helvetica;
+	
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#main{
+	padding:30px 50px;
+	position:relative;
+	width:100%;
+	height: 100vh;
+	box-sizing: border-box;
+	background-size: 1330px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-image: url("../images/bg.png");
+	background-color: #efefef;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 600;
+	font-family: helvetica;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color: rgba(255, 255, 255, 0);
+	z-index: 1;
+}
+ 
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#6c707c;
+	font-size: 15px;
+	font-family: helvetica;
+	color:#1c3548;
+	
+}
+.lang{
+	color:#292929;
+}
+.logo {
+	height: 50px;
+}
+.logo img{
+	height: 80px;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	text-shadow: 1px 1px 2px #B7E2FF;
+	color: #23cdaf;
+	font-weight: bold;
+	transition: all ease 0.3s;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #23cdaf;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.mascot img{
+	width:100%;
+	height: 100%;
+	object-fit: contain;
+}
+.mascot{
+	width:500px;
+	height: 500px;
+}
+.content{
+	width:100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: #efefef;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.main-text{
+	width:500px;
+}
+.main-text h1{
+	font-size: 3.5rem;
+	color:#1c3548;
+	margin:0px 0px 10px 0px;
+	line-height: 60px;
+}
+.main-text p{
+	color: black;
+}
+.portfolio-btn{
+	width:190px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#FFFFFF;
+	background-color: #1db096;
+	border-radius: 20px;
+	box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+}
+.portfolio-btn:hover{
+	background-color: #23cdaf;
+	transition: all ease 0.2s;
+}
+#shoes{
+	width:100%;
+	height:100vh;
+	box-sizing: border-box;
+	font-family: calibri;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px ;
+}
+ 
+.s-heading h1{
+	color:#1c3548;
+	font-family: helvetica;
+	font-size: 3rem;
+	margin: 0px;
+	padding: 0px;
+	
+}
+.s-heading p{
+	color: black;
+	font-family: helvetica;
+	font-size: 1rem;
+	margin: 0px;
+	padding: 0px;
+}
+.s-heading{
+	text-align: center;
+	margin: 20px 0px;
+}
+.s-box{
+	background-color: white;
+	width:350px;
+	height: 500px;
+	margin: 15px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+	position: relative;
+}
+.b-container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+ 
+	
+}
+.s-b-img{
+	width: 100%;
+	height: 55%;
+	
+}
+.s-b-img img{
+	width:100%;
+	height: 100%;
+	
+}
+.s-b-img2{
+	width: 100%;
+	height: 55%;
+	
+}
+.s-b-img2 img{
+	width:100%;
+	height: 90%;
+	
+}
+.s-b-text{
+	width: 100%;
+	height: 30%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.s-b-text a{
+	margin: 0px;
+	color: #1c3548;
+	font-size: 1.1rem;
+	font-family: helvetica;
+	display: block;
+    display: -webkit-box;
+	max-width: 80%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.s-b-text a:hover{
+	color: #23cdaf;
+}
+.s-type{
+	font-family: calibri;
+	color:#FFFFFF;
+	background-color: #151515;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.s-box:hover{
+	transform:translateY(-10px);
+	transition: all ease 0.3s;
+	
+}
+.release-btn{
+	width:190px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#FFFFFF;
+	background-color: #1db096;
+	font-family: helvetica;
+	border-radius: 20px;
+	box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+}
+ 
+.release-btn:hover{
+	background-color: #23cdaf;
+	transition: all ease 0.2s;
+}
+.release-btn{
+	width:190px;
+	margin-top: 10px;
+}
+/*Introduction------------------*/
+#introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    max-width: 50%;
+    padding: 5px 0px;
+    margin: 5px auto;
+    background-image: url(../images/bg.png);
+    background-size: 950px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.intro-heading{
+    width:60%;
+}
+.intro-heading strong{
+    color: #1c3548;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.intro-heading p{
+    color: black;
+}
+.intro-video{
+    margin-top: 50px;
+}
+.intro-video iframe{
+    width:712px;
+    height: 400px;
+}
+/*Revo---------------------*/
+#revo{
+    width:90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto auto 50px auto;
+	font-family: helvetica;
+}
+.revo-text-section{
+    width:400px;
+}
+.revo-heading h2{
+    color: #1c3548;
+    font-size: 3.3rem;
+    margin: 0px;
+    font-weight: 600;
+}
+.s-box-container{
+    margin-top: 30px;
+}
+.revo-box{
+    display: flex;
+    margin: 25px 0px;
+}
+.s-box-icon{
+    margin-right: 12px;
+}
+.s-box-icon i{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f011;
+    font-size: 1.1rem;
+}
+.revo-box strong{
+    color: #1c3548;
+    font-size: 2 rem;
+    font-weight: 600;
+}
+.revo-box p{
+    color: black;
+    font-size: 0.9rem;
+}
+.fa-html5{
+    color: #e06061;
+}
+.fa-css3-alt{
+    color: #5d85f3;
+}
+.fa-js{
+    color: #f9ca31;
+}
+.revo-img{
+    width:600px;
+    height: 600px;
+}
+.revo-img img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
